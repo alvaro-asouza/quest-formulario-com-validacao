@@ -1,0 +1,103 @@
+body {
+    background-image: url(../imagens/fundo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 12px 50px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.msg-suporte {
+    display: flex;
+    color: #FFF;
+    width: 50%;
+    width: 300px;
+    height: 111px;
+    margin-right: 60px;
+    align-content: center;
+    flex-direction: column;
+}
+
+.msg-suporte h1{
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 11px;
+}
+
+.formulario {
+    background-color: #FFF;
+    width: 340px;
+    height: 378px;
+    border: 1px #000;
+    padding: 20px 21px;
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario input, textarea {
+    height: 35px;
+    margin-bottom: 15px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 8px;
+    font-weight: 500;
+    outline: none;
+}
+
+.formulario #telefone::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.formulario #mensagem {
+    height: 100px;
+    margin-bottom: 7px;
+}
+
+.formulario .campo-obrigatorio{
+    margin-left: -5px;
+}
+
+.formulario .botao-enviar {
+    background-color: #3BCC87;
+    width: 300px;
+    height: 41px;
+    border: none;
+    border-radius: 5px;
+    margin: 20px 0 0 0;
+    color: #fff;
+    cursor: pointer;
+}
+
+.formulario input.preenchido, textarea.preenchido {
+    border: 1.5px solid #3BCC87;
+}
+
+.formulario input.vazio, textarea.vazio {
+    margin-bottom: 0;
+    border: 1px solid red;
+}
+
+.formulario .erro {
+    display: none;
+    margin-bottom: 8px;
+    font-size: 10px;
+    color: red;
+}
+
+.formulario .erro.vazio {
+    display: block;
+}

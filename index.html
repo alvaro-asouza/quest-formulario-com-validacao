@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/responsive.css">
+
+    <title>Formulário com Validação</title>
+</head>
+
+<body>
+
+    <main>
+        <div class="container">
+
+        <div class="msg-suporte">
+            <h1>
+                FICOU COM DÚVIDA?<br>
+                NOS MANDE UMA MENSAGEM!
+            </h1>
+            <p>
+                Caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos de
+                24h.
+            </p>
+        </div>
+        <form method="get" action="index.html" id="formulario" class="formulario">
+            
+                <input type="text" name="nome" id="nomeCompleto" class="campo nome-completo" placeholder="  Nome completo *" alt="Nome completo">
+                <span class="erro" id="erroNomeCompleto">campo obrigatório</span>
+            
+                <input type="email" name="email" id="email" class="campo email" placeholder="  Email *" alt="Email">
+                <span class="erro" id="erroEmail">campo obrigatório</span>
+            
+                <input type="number" name="telefone" id="telefone" class="campo telefone" placeholder="  Telefone *" alt="Telefone">
+                <span class="erro " id="erroTelefone">campo obrigatório</span>
+    
+                <textarea class="campo mensagem" name="mensagem" id="mensagem" placeholder=" Mensagem *"></textarea>
+                <span class="erro" id="erroMensagem">campo obrigatório</span>
+
+
+            <p class="campo-obrigatorio">*campos obrigatórios</p>
+
+            <button type="submit" class="botao-enviar" id="botaoEnviar">Enviar</button>
+            <!-- <input id="enviar" type="submit" value="Enviar"> -->
+        </form>
+    </div>
+    </main>
+
+    <script src="./src/js/formulario.js"></script>
+</body>
+
+</html>
