@@ -1,4 +1,4 @@
-# Quest - intermédiaria de formulário com validação - Devquest
+# Quest - intermediária de formulário com validação - Devquest
 
 <div align="center">
   
