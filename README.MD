@@ -6,11 +6,15 @@
 
 </div>
 
+<br>
+
 <div align="center">
   
   <img align="center" src="./src/imagens/layout-2.png" width="450px" height="300px" alt="imagem desktop">
 
 </div>
+
+<br>
 
 <div align="center">
   
